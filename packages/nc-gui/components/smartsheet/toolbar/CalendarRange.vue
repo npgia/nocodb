@@ -167,7 +167,7 @@ const saveCalendarRange = async (range: CalendarRangeType, value?) => {
           </NcSelect>
 
           <div
-            v-if="range.fk_to_column_id === null && isEeUI"
+            v-if="range.fk_to_column_id === null && isEeUI && false"
             class="flex cursor-pointer flex text-gray-800 items-center gap-1"
             data-testid="nc-calendar-range-add-end-date"
             @click="saveCalendarRange(range, undefined)"
@@ -175,7 +175,7 @@ const saveCalendarRange = async (range: CalendarRangeType, value?) => {
             <component :is="iconMap.plus" class="h-4 w-4" />
             {{ $t('activity.addEndDate') }}
           </div>
-          <template v-else-if="isEeUI">
+          <template v-else-if="isEeUI && false">
             <span>
               {{ $t('activity.withEndDate') }}
             </span>
