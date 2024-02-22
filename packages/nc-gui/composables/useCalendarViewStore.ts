@@ -526,7 +526,7 @@ const [useProvideCalendarViewStore, useCalendarViewStore] = useInjectionState(
             filtersArr: activeDateFilter,
           })
       if (res) {
-        activeDates.value = res.map((dateObj: unknown) => dayjs(dateObj))
+        activeDates.value = res.map((dateObj: unknown) => dayjs(dateObj as string))
       } else {
         activeDates.value = []
       }

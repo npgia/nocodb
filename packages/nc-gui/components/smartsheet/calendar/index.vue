@@ -41,6 +41,7 @@ provide(IsKanbanInj, ref(false))
 provide(IsCalendarInj, ref(true))
 
 const {
+  activeCalendarView,
   calDataType,
   loadCalendarMeta,
   loadCalendarData,
@@ -52,7 +53,6 @@ const {
   pageDate,
   showSideMenu,
   selectedDateRange,
-  activeCalendarView,
   paginateCalendarView,
 } = useCalendarViewStoreOrThrow()
 
