@@ -451,14 +451,14 @@ onMounted(async () => {
               </a-select-option>
             </NcSelect>
             <div
-              v-if="range.fk_to_column_id === null && isEeUI && false"
+              v-if="range.fk_to_column_id === null && isEeUI"
               class="cursor-pointer flex items-center text-gray-800 gap-1"
               @click="range.fk_to_column_id = undefined"
             >
               <component :is="iconMap.plus" class="h-4 w-4" />
               {{ $t('activity.addEndDate') }}
             </div>
-            <template v-else-if="isEeUI && false">
+            <template v-else-if="isEeUI">
               <span>
                 {{ $t('activity.withEndDate') }}
               </span>

@@ -131,7 +131,7 @@ const saveCalendarRange = async (range: CalendarRangeType, value?) => {
       </a-button>
     </div>
     <template #overlay>
-      <div v-if="calendarRangeDropdown" class="w-full p-6 w-[22rem]" data-testid="nc-calendar-range-menu" @click.stop>
+      <div v-if="calendarRangeDropdown" class="w-full p-6 w-[34rem]" data-testid="nc-calendar-range-menu" @click.stop>
         <div
           v-for="(range, id) in _calendar_ranges"
           :key="id"
@@ -167,7 +167,7 @@ const saveCalendarRange = async (range: CalendarRangeType, value?) => {
           </NcSelect>
 
           <div
-            v-if="range.fk_to_column_id === null && isEeUI && false"
+            v-if="range.fk_to_column_id === null && isEeUI"
             class="flex cursor-pointer flex text-gray-800 items-center gap-1"
             data-testid="nc-calendar-range-add-end-date"
             @click="saveCalendarRange(range, undefined)"
@@ -175,7 +175,7 @@ const saveCalendarRange = async (range: CalendarRangeType, value?) => {
             <component :is="iconMap.plus" class="h-4 w-4" />
             {{ $t('activity.addEndDate') }}
           </div>
-          <template v-else-if="isEeUI && false">
+          <template v-else-if="isEeUI">
             <span>
               {{ $t('activity.withEndDate') }}
             </span>

@@ -122,6 +122,9 @@ import NcArrowDown from '~icons/nc-icons/arrow-down'
 import NcUpload from '~icons/nc-icons/upload'
 import NcDownload from '~icons/nc-icons/download'
 import NcPhoneCall from '~icons/nc-icons/phone-call'
+import NcItalic from '~icons/nc-icons/italic'
+import NcBold from '~icons/nc-icons/bold'
+import NcUnderline from '~icons/nc-icons/underline'
 
 // keep it for reference
 // todo: remove it after all icons are migrated
@@ -481,6 +484,9 @@ export const iconMap = {
   ncEdit: NcEdit,
   ncArrowUp: NcArrowUp,
   ncArrowDown: NcArrowDown,
+  underline: NcUnderline,
+  bold: NcBold,
+  italic: NcItalic,
   phoneCall: NcPhoneCall,
 }
 
