@@ -19,7 +19,6 @@ export class DataTableService {
     modelId: string;
     query: any;
     viewId?: string;
-    ignorePagination?: boolean;
   }) {
     const { model, view } = await this.getModelAndView(param);
 
@@ -28,7 +27,6 @@ export class DataTableService {
       view,
       query: param.query,
       throwErrorIfInvalidParams: true,
-      ignorePagination: param.ignorePagination,
     });
   }
 
